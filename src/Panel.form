@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Panel">
+  <grid id="27dc6" binding="newRootPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="84" y="20" width="344" height="383"/>
+    </constraints>
+    <properties>
+      <focusable value="false"/>
+      <maximumSize width="150" height="100"/>
+      <minimumSize width="100" height="100"/>
+      <preferredSize width="800" height="400"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="66716" class="javax.swing.JTextArea" binding="outputTextArea">
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-9669763"/>
+          <enabled value="false"/>
+          <foreground color="-16777216"/>
+          <maximumSize width="100" height="120"/>
+          <text value=""/>
+          <visible value="true"/>
+        </properties>
+      </component>
+      <tabbedpane id="3beed" binding="tabbedPane1" default-binding="true">
+        <constraints border-constraint="North"/>
+        <properties>
+          <focusable value="false"/>
+          <preferredSize width="300" height="277"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="9dc78" binding="tabeFirst" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <tabbedpane title="Calculate"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="95f2e" binding="inputPanel" layout-manager="GridLayoutManager" row-count="9" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints border-constraint="North"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="f02bc" class="javax.swing.JTextField" binding="aTextField">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="0"/>
+                    </properties>
+                  </component>
+                  <component id="c69b0" class="javax.swing.JTextField" binding="bTextField">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="10"/>
+                    </properties>
+                  </component>
+                  <component id="27c4d" class="javax.swing.JTextField" binding="eTextField">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="0.01"/>
+                    </properties>
+                  </component>
+                  <component id="b1ea5" class="javax.swing.JLabel" binding="bLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Границя - &quot;b&quot;"/>
+                    </properties>
+                  </component>
+                  <component id="43d14" class="javax.swing.JLabel" binding="eLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Похибка"/>
+                    </properties>
+                  </component>
+                  <component id="3479d" class="javax.swing.JTextField" binding="maxIterationTextField">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                        <preferred-size width="150" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="10"/>
+                    </properties>
+                  </component>
+                  <component id="9a82" class="javax.swing.JLabel" binding="maxIterationLabel">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Максимальна кількість ітерацій"/>
+                    </properties>
+                  </component>
+                  <component id="37bab" class="javax.swing.JLabel" binding="aLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Границя - &quot;a&quot;"/>
+                    </properties>
+                  </component>
+                  <component id="c5c6a" class="javax.swing.JLabel" binding="functionlabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Function: 5x^2-4x+1"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="b66ff" binding="buttonPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="fb33d" class="javax.swing.JButton" binding="calculateButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Calculate"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="90175" binding="HalfDivisionPhotoPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="HalfDivision"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="9967f" class="javax.swing.JLabel" binding="photoHalfDivisionLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="1287" class="javax.swing.JButton" binding="startHalfDivisionButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="4"/>
+                  <text value="Explained"/>
+                </properties>
+              </component>
+              <hspacer id="31fd1">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+          <grid id="bef19" binding="GoldenSectionPhotoPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <tabbedpane title="GoldenSection"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="dae5e" class="javax.swing.JLabel" binding="photoGoldenSectionLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="b26c1" class="javax.swing.JButton" binding="startGoldenSectionButton">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <text value="Explained"/>
+                </properties>
+              </component>
+              <hspacer id="af926">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="2" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
