@@ -15,6 +15,7 @@
       <component id="66716" class="javax.swing.JTextArea" binding="outputTextArea">
         <constraints border-constraint="Center"/>
         <properties>
+          <alignmentX value="0.5"/>
           <background color="-9669763"/>
           <enabled value="false"/>
           <foreground color="-16777216"/>

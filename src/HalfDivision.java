@@ -33,7 +33,6 @@ public class HalfDivision
         {
             if (iteration<=MaxIteration){
             xs = xs(a,b);
-            // System.out.println("Middle = "+xs);
 
             if (f(a)*f(xs) <=0)
             {
@@ -43,16 +42,12 @@ public class HalfDivision
             {
                 a = xs;
             }
-             // System.out.println("a = "+a+" b = "+b);
                 iteration++;
         }else {break;}
         }
         this.iteration = iteration-1;
         xs = xs(a,b);
         return xs;
-       // System.out.println("Middle = "+xs);
     }
-
-
 
 }
