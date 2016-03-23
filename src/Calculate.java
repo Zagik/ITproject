@@ -6,7 +6,7 @@ import java.util.Scanner;
  */
 public class Calculate
 {
-   //YEEEEEE
+  
     private double a;
     private double b;
     private double e;
